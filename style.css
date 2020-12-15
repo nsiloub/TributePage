@@ -25,6 +25,9 @@ img{
 a:link{
     text-decoration:none;
 }
+p, li{
+    line-height: calc(30px + 1vw);
+}
 a{
     color: red;
     font-weight: bold;
@@ -85,15 +88,7 @@ body{
         width: 100%;
         transform: translateY(calc(45px - 2.4vw) );
         position:relative;
-/*!to remove for FCC test*/
         padding-left: 5%;
-/*!to remove for FCC test*/
-
-/*!just for passing the FCC test bellow */
-        /* display: inline-flex;
-        flex-direction: column;
-        align-items: center; */
-/* !just for passing the FCC test above */
     }
     @media (max-width:330px){
         #img-div{
@@ -149,22 +144,13 @@ body{
                 transform: scale(1, 1);
                 border: 5px double rgb(153, 0, 255);
             }
-            /* 100%{
-                transform: scale(1, 1);
-                border: 5px double rgb(255, 246, 5)  ;
-            } */
 
         }
 /*  body > profile END*/
 
-        /* #img-div, .just-a-random-div, #image{
-            display:none;
-        } */
-
 /* body > main */
     main{
         grid-area: 3/1/4/2;
-        /* grid-area: 2/1/3/2; */
         width: 100%;
         background-color: #fff;
         display: flex;
@@ -176,13 +162,10 @@ body{
         .intro{
             padding:calc(55px + 6vw) 5% calc(5px + 6vw);
             width:100%;
-            /* height: 100vh; */
             display: flex;
-            /* background: #f8a000; */
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            /* color: #002469; */
         }
             .title, h1{
                 font-size: calc(1.5rem + 1vw);
@@ -208,7 +191,6 @@ body{
                     display:inline-block;
                     border-top: 2.8px solid #f00;
                     width: calc(10px + 8vw);
-                    /* margin:0 1rem; */
                     transform: translateY(-.5rem); 
                 }
             }
@@ -241,7 +223,6 @@ body{
             }
                 .first{
                     width:100%;
-                    /* padding:auto 5%; */
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -343,10 +324,8 @@ body{
 
 /* body > main END*/
             .footer{
-                /* grid-area: 4/1/4/2; */
                 width: 100%;
                 position: relative;
-                /* background-color: #fff; */
                 display: flex;
                 justify-content: center;
                 background-color: #e7cbcb;
@@ -361,7 +340,6 @@ body{
             }
             .social{
                 width: 100%;
-                /* margin:auto 80px; */
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
