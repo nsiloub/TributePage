@@ -42,7 +42,7 @@ body{
     margin:0;
     display: grid;
     grid-template-columns:1fr;
-    row-gap: calc(80px);
+    row-gap: calc(100px - 1vw);
 }
 /* body > header */
     header{
@@ -88,7 +88,15 @@ body{
         width: 100%;
         transform: translateY(calc(45px - 2.4vw) );
         position:relative;
+/*!to remove for FCC test*/
         padding-left: 5%;
+/*!to remove for FCC test*/
+
+/*!just for passing the FCC test bellow */
+        /* display: inline-flex;
+        flex-direction: column;
+        align-items: center; */
+/* !just for passing the FCC test above */
     }
     @media (max-width:330px){
         #img-div{
@@ -160,7 +168,7 @@ body{
     
 /* body > main > intro */
         .intro{
-            padding:calc(55px + 6vw) 5% calc(5px + 6vw);
+            padding:calc(100px + 6vw) 5% calc(5px + 6vw);
             width:100%;
             display: flex;
             flex-direction: column;
